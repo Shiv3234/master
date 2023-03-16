@@ -1,41 +1,114 @@
-<div class="sidebar pe-4 pb-3">
-            <nav class="navbar bg-secondary navbar-dark">
-                <a href="{{route('dashboard')}}" class="navbar-brand mx-4 mb-3">
-                    <h3 class="text-primary"><i class="fa fa-user-edit me-2"></i>DarkPan</h3>
-                </a>
-                <div class="d-flex align-items-center ms-4 mb-4">
-                    <div class="position-relative">
-                        <img class="rounded-circle" src="{{asset('img/user.jpg')}}" alt="" style="width: 40px; height: 40px;">
-                        <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
-                    </div>
-                    <div class="ms-3">
-                        <h6 class="mb-0">Shiv</h6>
-                        <span>Admin</span>
-                    </div>
-                </div>
-                <div class="navbar-nav w-100">
-                    <a href="{{route('dashboard')}}" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
-                    <!-- <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>Elements</a>
-                        <div class="dropdown-menu bg-transparent border-0">
-                            <a href="button.html" class="dropdown-item">Buttons</a>
-                            <a href="typography.html" class="dropdown-item">Typography</a>
-                            <a href="element.html" class="dropdown-item">Other Elements</a>
-                        </div>
-                    </div> -->
-                    <a href="{{route('user.list')}}" class="nav-item nav-link"><i class="fa fa-users"></i>Users List</a>
-                    <!-- <a href="form.html" class="nav-item nav-link"><i class="fa fa-keyboard me-2"></i>Forms</a>
-                    <a href="table.html" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Tables</a>
-                    <a href="chart.html" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Charts</a> -->
-                    <!-- <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="far fa-file-alt me-2"></i>Pages</a>
-                        <div class="dropdown-menu bg-transparent border-0">
-                            <a href="signin.html" class="dropdown-item">Sign In</a>
-                            <a href="signup.html" class="dropdown-item">Sign Up</a>
-                            <a href="404.html" class="dropdown-item">404 Error</a>
-                            <a href="blank.html" class="dropdown-item">Blank Page</a>
-                        </div>
-                    </div> -->
-                </div>
-            </nav>
-        </div>
+<aside class="wrap-sidebar js-sidebar">
+	<div class="s-full js-hide-sidebar"></div>
+
+	<div class="sidebar flex-col-l p-t-22 p-b-25">
+		<div class="flex-r w-full p-b-30 p-r-27">
+			<div class="fs-35 lh-10 cl2 p-lr-5 pointer hov-cl1 trans-04 js-hide-sidebar">
+				<i class="zmdi zmdi-close"></i>
+			</div>
+		</div>
+
+		<div class="sidebar-content flex-w w-full p-lr-65 js-pscroll">
+			<ul class="sidebar-link w-full">
+				<li class="p-b-13">
+					<a href="index.html" class="stext-102 cl2 hov-cl1 trans-04">
+						Home
+					</a>
+				</li>
+
+				<li class="p-b-13">
+					<a href="#" class="stext-102 cl2 hov-cl1 trans-04">
+						My Wishlist
+					</a>
+				</li>
+
+				<li class="p-b-13">
+					<a href="#" class="stext-102 cl2 hov-cl1 trans-04">
+						My Account
+					</a>
+				</li>
+
+				<li class="p-b-13">
+					<a href="#" class="stext-102 cl2 hov-cl1 trans-04">
+						Track Oder
+					</a>
+				</li>
+
+				<li class="p-b-13">
+					<a href="#" class="stext-102 cl2 hov-cl1 trans-04">
+						Refunds
+					</a>
+				</li>
+
+				<li class="p-b-13">
+					<a href="#" class="stext-102 cl2 hov-cl1 trans-04">
+						Help & FAQs
+					</a>
+				</li>
+			</ul>
+
+			<div class="sidebar-gallery w-full p-tb-30">
+				<span class="mtext-101 cl5">
+					@ CozaStore
+				</span>
+
+				<div class="flex-w flex-sb p-t-36 gallery-lb">
+					<!-- item gallery sidebar -->
+					<div class="wrap-item-gallery m-b-10">
+						<a class="item-gallery bg-img1" href="{{asset('project/images/gallery-01.jpg')}}" data-lightbox="gallery" style="background-image: url('project/images/gallery-01.jpg');"></a>
+					</div>
+
+					<!-- item gallery sidebar -->
+					<div class="wrap-item-gallery m-b-10">
+						<a class="item-gallery bg-img1" href="{{asset('project/images/gallery-02.jpg')}}" data-lightbox="gallery" style="background-image: url('project/images/gallery-02.jpg');"></a>
+					</div>
+
+					<!-- item gallery sidebar -->
+					<div class="wrap-item-gallery m-b-10">
+						<a class="item-gallery bg-img1" href="{{asset('project/images/gallery-03.jpg')}}" data-lightbox="gallery" style="background-image: url('project/images/gallery-03.jpg');"></a>
+					</div>
+
+					<!-- item gallery sidebar -->
+					<div class="wrap-item-gallery m-b-10">
+						<a class="item-gallery bg-img1" href="{{asset('project/images/gallery-04.jpg')}}" data-lightbox="gallery" style="background-image: url('project/images/gallery-04.jpg');"></a>
+					</div>
+
+					<!-- item gallery sidebar -->
+					<div class="wrap-item-gallery m-b-10">
+						<a class="item-gallery bg-img1" href="{{asset('project/images/gallery-05.jpg')}}" data-lightbox="gallery" style="background-image: url('project/images/gallery-05.jpg');"></a>
+					</div>
+
+					<!-- item gallery sidebar -->
+					<div class="wrap-item-gallery m-b-10">
+						<a class="item-gallery bg-img1" href="{{asset('project/images/gallery-06.jpg')}}" data-lightbox="gallery" style="background-image: url('project/images/gallery-06.jpg');"></a>
+					</div>
+
+					<!-- item gallery sidebar -->
+					<div class="wrap-item-gallery m-b-10">
+						<a class="item-gallery bg-img1" href="{{asset('project/images/gallery-07.jpg')}}" data-lightbox="gallery" style="background-image: url('project/images/gallery-07.jpg');"></a>
+					</div>
+
+					<!-- item gallery sidebar -->
+					<div class="wrap-item-gallery m-b-10">
+						<a class="item-gallery bg-img1" href="{{asset('project/images/gallery-08.jpg')}}" data-lightbox="gallery" style="background-image: url('project/images/gallery-08.jpg');"></a>
+					</div>
+
+					<!-- item gallery sidebar -->
+					<div class="wrap-item-gallery m-b-10">
+						<a class="item-gallery bg-img1" href="{{asset('project/images/gallery-09.jpg')}}" data-lightbox="gallery" style="background-image: url('project/images/gallery-09.jpg');"></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="sidebar-gallery w-full">
+				<span class="mtext-101 cl5">
+					About Us
+				</span>
+
+				<p class="stext-108 cl6 p-t-27">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur maximus vulputate hendrerit. Praesent faucibus erat vitae rutrum gravida. Vestibulum tempus mi enim, in molestie sem fermentum quis.
+				</p>
+			</div>
+		</div>
+	</div>
+</aside>

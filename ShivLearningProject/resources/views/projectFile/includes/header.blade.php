@@ -1,87 +1,123 @@
-<nav class="navbar navbar-expand bg-secondary navbar-dark sticky-top px-4 py-0">
-                <a href="index.html" class="navbar-brand d-flex d-lg-none me-4">
-                    <h2 class="text-primary mb-0"><i class="fa fa-user-edit"></i></h2>
-                </a>
-                <a href="#" class="sidebar-toggler flex-shrink-0">
-                    <i class="fa fa-bars"></i>
-                </a>
-                <form class="d-none d-md-flex ms-4">
-                    <input class="form-control bg-dark border-0" type="search" placeholder="Search">
-                </form>
-                <div class="navbar-nav align-items-center ms-auto">
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                            <i class="fa fa-envelope me-lg-2"></i>
-                            <span class="d-none d-lg-inline-flex">Message</span>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
-                            <a href="#" class="dropdown-item">
-                                <div class="d-flex align-items-center">
-                                    <img class="rounded-circle" src="{{asset('img/user.jpg')}}" alt="" style="width: 40px; height: 40px;">
-                                    <div class="ms-2">
-                                        <h6 class="fw-normal mb-0">Jhon send you a message</h6>
-                                        <small>15 minutes ago</small>
-                                    </div>
-                                </div>
-                            </a>
-                            <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item">
-                                <div class="d-flex align-items-center">
-                                    <img class="rounded-circle" src="{{asset('img/user.jpg')}}" alt="" style="width: 40px; height: 40px;">
-                                    <div class="ms-2">
-                                        <h6 class="fw-normal mb-0">Jhon send you a message</h6>
-                                        <small>15 minutes ago</small>
-                                    </div>
-                                </div>
-                            </a>
-                            <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item">
-                                <div class="d-flex align-items-center">
-                                    <img class="rounded-circle" src="{{asset('img/user.jpg')}}" alt="" style="width: 40px; height: 40px;">
-                                    <div class="ms-2">
-                                        <h6 class="fw-normal mb-0">Jhon send you a message</h6>
-                                        <small>15 minutes ago</small>
-                                    </div>
-                                </div>
-                            </a>
-                            <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item text-center">See all message</a>
-                        </div>
-                    </div>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                            <i class="fa fa-bell me-lg-2"></i>
-                            <span class="d-none d-lg-inline-flex">Notificatin</span>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
-                            <a href="#" class="dropdown-item">
-                                <h6 class="fw-normal mb-0">Profile updated</h6>
-                                <small>15 minutes ago</small>
-                            </a>
-                            <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item">
-                                <h6 class="fw-normal mb-0">New user added</h6>
-                                <small>15 minutes ago</small>
-                            </a>
-                            <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item">
-                                <h6 class="fw-normal mb-0">Password changed</h6>
-                                <small>15 minutes ago</small>
-                            </a>
-                            <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item text-center">See all notifications</a>
-                        </div>
-                    </div>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                            <img class="rounded-circle me-lg-2" src="{{asset('img/user.jpg')}}" alt="" style="width: 40px; height: 40px;">
-                            <span class="d-none d-lg-inline-flex">John Doe</span>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
-                            <a href="#" class="dropdown-item">My Profile</a>
-                            <a href="#" class="dropdown-item">Settings</a>
-                            <a href="{{route('logout')}}" class="dropdown-item">Log Out</a>
-                        </div>
-                    </div>
-                </div>
-            </nav>
+<header class="header-v3">
+	<div class="container-menu-desktop trans-03">
+		<div class="wrap-menu-desktop">
+			<nav class="limiter-menu-desktop p-l-45">
+
+				<a href="{{route('index')}}" class="logo">
+					<img src="{{asset('project/images/icons/logo-02.png')}}" alt="IMG-LOGO">
+				</a>
+
+				<div class="menu-desktop">
+					<ul class="main-menu">
+						<li>
+							<a href="{{route('index')}}">Home</a>
+							<ul class="sub-menu">
+								<li><a href="{{route('index')}}">Homepage</a></li>
+							</ul>
+						</li>
+
+						<li>
+							<a href="{{route('shop')}}">Shop</a>
+						</li>
+
+						<li>
+							<a href="{{route('features')}}">Features</a>
+						</li>
+
+						<li>
+							<a href="{{route('blog')}}">Blog</a>
+						</li>
+
+						<li>
+							<a href="{{route('about')}}">About</a>
+						</li>
+
+						<li>
+							<a href="{{route('contact')}}">Contact</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="wrap-icon-header flex-w flex-r-m h-full">
+					<div class="flex-c-m h-full p-r-25 bor6">
+						<div class="icon-header-item cl0 hov-cl1 trans-04 p-lr-11 icon-header-noti js-show-cart" data-notify="2">
+							<i class="zmdi zmdi-shopping-cart"></i>
+						</div>
+					</div>
+
+					<div class="flex-c-m h-full p-lr-19">
+						<div class="icon-header-item cl0 hov-cl1 trans-04 p-lr-11 js-show-sidebar">
+							<i class="zmdi zmdi-menu"></i>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</div>
+	<div class="wrap-header-mobile">
+		<div class="logo-mobile">
+			<a href="index.html"><img src="{{asset('project/images/icons/logo-01.png')}}" alt="IMG-LOGO"></a>
+		</div>
+		<div class="wrap-icon-header flex-w flex-r-m h-full m-r-15">
+			<div class="flex-c-m h-full p-r-5">
+				<div class="icon-header-item cl2 hov-cl1 trans-04 p-lr-11 icon-header-noti js-show-cart" data-notify="2">
+					<i class="zmdi zmdi-shopping-cart"></i>
+				</div>
+			</div>
+		</div>
+		<div class="btn-show-menu-mobile hamburger hamburger--squeeze">
+			<span class="hamburger-box">
+				<span class="hamburger-inner"></span>
+			</span>
+		</div>
+	</div>
+	<div class="menu-mobile">
+		<ul class="main-menu-m">
+			<li>
+				<a href="index.html">Home</a>
+				<ul class="sub-menu-m">
+					<li><a href="index.html">Homepage 1</a></li>
+					<li><a href="home-02.html">Homepage 2</a></li>
+					<li><a href="home-03.html">Homepage 3</a></li>
+				</ul>
+				<span class="arrow-main-menu-m">
+					<i class="fa fa-angle-right" aria-hidden="true"></i>
+				</span>
+			</li>
+
+			<li>
+				<a href="product.html">Shop</a>
+			</li>
+
+			<li>
+				<!-- <a href="shoping-cart.html" class="label1 rs1" data-label1="hot">Features</a> -->
+			</li>
+
+			<li>
+				<a href="blog.html">Blog</a>
+			</li>
+
+			<li>
+				<a href="about.html">About</a>
+			</li>
+
+			<li>
+				<a href="contact.html">Contact</a>
+			</li>
+		</ul>
+		<div class="modal-search-header flex-c-m trans-04 js-hide-modal-search">
+			<button class="flex-c-m btn-hide-modal-search trans-04">
+				<i class="zmdi zmdi-close"></i>
+			</button>
+
+			<form class="container-search-header">
+				<div class="wrap-search-header">
+					<input class="plh0" type="text" name="search" placeholder="Search...">
+
+					<button class="flex-c-m trans-04">
+						<i class="zmdi zmdi-search"></i>
+					</button>
+				</div>
+			</form>
+		</div>
+</header>

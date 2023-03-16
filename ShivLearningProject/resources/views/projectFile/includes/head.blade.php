@@ -1,28 +1,35 @@
-<meta charset="utf-8">
-    <title>DarkPan - Shiv Admin</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
-
-    <!-- Favicon -->
-    <link href="{{asset('img/favicon.ico')}}" rel="icon">
-
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="{{asset('https://fonts.googleapis.com')}}">
-    <link rel="preconnect" href="{{asset('https://fonts.gstatic.com')}}" crossorigin>
-    <link href="{{asset('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap')}}" rel="stylesheet"> 
-    
-    <!-- Icon Font Stylesheet -->
-    <link href="{{asset('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css')}}" rel="stylesheet">
-    <link href="{{asset('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css')}}" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
-    <link href="{{asset('lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
-    <link href="{{asset('lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css')}}" rel="stylesheet" />
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
-    <link href="{{asset('css/style.css')}}" rel="stylesheet">
-
+<head>
+	<title>Home 03</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="{{asset('project/images/icons/favicon.png')}}" />
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{asset('project/vendor/bootstrap/css/bootstrap.min.css')}}">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{asset('project/fonts/font-awesome-4.7.0/css/font-awesome.min.css')}}">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{asset('project/fonts/iconic/css/material-design-iconic-font.min.css')}}">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{asset('project/fonts/linearicons-v1.0.0/icon-font.min.css')}}">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{asset('project/vendor/animate/animate.css')}}">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{asset('project/vendor/css-hamburgers/hamburgers.min.css')}}">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{asset('project/vendor/animsition/css/animsition.min.css')}}">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{asset('project/vendor/select2/select2.min.css')}}">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{asset('project/vendor/daterangepicker/daterangepicker.css')}}">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{asset('project/vendor/slick/slick.css')}}">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{asset('project/vendor/MagnificPopup/magnific-popup.css')}}">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{asset('project/vendor/perfect-scrollbar/perfect-scrollbar.css')}}">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{asset('project/css/util.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{asset('project/css/main.css')}}">
+	<!--===============================================================================================-->
+</head>
