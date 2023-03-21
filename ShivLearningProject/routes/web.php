@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ChatController;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\UserController;
 use GuzzleHttp\Middleware;
 use Illuminate\Support\Facades\Auth;
@@ -49,4 +50,10 @@ Route::group(['middleware' => 'prevent-back-history'], function () {
 
         Route::get('chat', [ChatController::class, 'chat'])->name('chat');
     });
+    Route::get('index', [ProductController::class, 'index'])->name('index');
+    Route::get('about', [ProductController::class, 'about'])->name('about');
+    Route::get('contact', [ProductController::class, 'contact'])->name('contact');
+    Route::get('blog', [ProductController::class, 'blog'])->name('blog');
+    Route::get('shop', [ProductController::class, 'shop'])->name('shop');
+    Route::get('features', [ProductController::class, 'features'])->name('features');
 });
